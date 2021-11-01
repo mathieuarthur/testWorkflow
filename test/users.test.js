@@ -18,7 +18,7 @@ describe("test user", function(){
             return requester.get("/api/users")
             .then(function(res){
                 console.log(res.status);
-                expect(res).to.have.status(200);
+                expect(res).to.have.status(400);
                 expect(res.body).to.be.a("array");
             })
         })
